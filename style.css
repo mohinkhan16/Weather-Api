@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.07);
+    /* backdrop-filter: blur(16px); */
+    /* -webkit-backdrop-filter: blur(16px); */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    width: 360px;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    color: #a9d4ff;
+}
+
+.search-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s, background 0.2s;
+}
+
+#cityInput::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#cityInput:focus {
+    border-color: #5badff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background: #5badff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #3a95ee;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#error {
+    color: #ff7f7f;
+    font-size: 13px;
+    margin: 6px 0;
+    min-height: 18px;
+}
+
+#city {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 1rem 0 0.5rem;
+    color: #fff;
+}
+
+#weather {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#weather p {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #e0f0ff;
+    line-height: 1.5;
+}
