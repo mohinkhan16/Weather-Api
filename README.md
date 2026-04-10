@@ -2,7 +2,7 @@
 
 A simple and clean weather application that fetches real-time weather data using an API. Users can enter a city name and get current weather details like temperature, humidity, wind speed, and conditions.
 
-live link :-
+live link :-weather-api-eosin-five.vercel.app
 
 
 🚀 Features:-
